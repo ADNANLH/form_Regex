@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="bg-image"></div>
+        <img src="pic/solicode_b.png" alt="schoolimg">
+        <div class="form">
+            <form action="" onsubmit="return false">
+
+                <h3>First name</h3>
+                <input type="text" name="firstname" id="firstname" onkeyup="checkName()">
+                <p id="name"></p>
+                
+            <h3>Last name</h3>
+            <input type="text" name="lastname" id="lastname" onkeyup="checkLastName()">
+            <p id="namelast"></p>
+            
+            <h3>Email</h3>
+            <input type="text" name="email" id="email" onkeyup="checkEmail()">
+            <p id="paraemail"></p>
+            
+            <h3>Phone</h3>
+            <input type="text" name="telephone" id="telephone" onkeyup="checkPhone()">
+            <p id="paratele"></p>
+            <br>
+
+            <h3>Gender:</h3>
+            <input type="radio" name="Genre" id="female"  onkeyup="checkGender()" >
+            <label for="female">Female</label>
+            <input type="radio" name="Genre" id="male" onkeyup="checkGender()">
+            <label for="male">Male</label> <p id="paragenre"></p><br>
+
+
+            <h3 id="groupes">Groups:</h3>
+            <div >
+
+                <label for="DW101" id="radio">DW101</label>
+                <input type="radio" name="groupes" id="DW101" onkeyup="checkGroup()">
+                <label for="DW102" id="radio">DW102</label>
+                <input type="radio" name="groupes" id="DW102" onkeyup="checkGroup()">
+                <label for="DW103" id="radio">DW103</label>
+                <input type="radio" name="groupes" id="DW103" onkeyup="checkGroup()">
+                <label for="DW104" id="radio">DW104</label>
+                <input type="radio" name="groupes" id="DW104" onkeyup="checkGroup()">
+                <label for="DM101" id="radio">DM101</label>
+                <input type="radio" name="groupes" id="DM101" onkeyup="checkGroup()">
+                <label for="DM102" id="radio">DM102</label>
+                <input type="radio" name="groupes" id="DM102" onkeyup="checkGroup()">
+                <p id="AFFICHE"></p>
+            </div>
+
+            <h3 class="clb">Clubs</h3>
+            <select name="Club(s)" id="Club(s)-select" multiple onkeyup="checkClubs()">
+                <option value="Informatique">Informatique</option>
+                <option value="Robotique">Robotique</option>
+                <option value="Jeu d'échecs">Jeu d'échecs</option>
+                <option value="Musique">Musique</option>
+                <option value="Foot">Foot</option>
+                <option value="Théatre">Théatre</option>
+            </select>
+            <p id="paraclb"></p>
+            <input type="submit" value="go" id="btn" onclick="checkName(), checkLastName(),checkEmail(), checkPhone(), checkGender(),checkGroup(), checkClubs() ">
+            </form>
+        </div> 
+        <script src="regix.js"></script>
+</body>
+</html>

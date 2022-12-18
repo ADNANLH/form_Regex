@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="bg-image"></div>
+        <img src="pic/solicode_b.png" alt="schoolimg">
+        <div class="form">
+            <h3>First name</h3>
+            <input type="text" name="firstname" id="firstname">
+            <p id="name"></p>
+
+            <h3>Last name</h3>
+            <input type="text" name="lastname" id="lastname">
+            <p id="namelast"></p>
+            
+            <h3>Email</h3>
+            <input type="text" name="email" id="email">
+            <p id="paraemail"></p>
+            
+            <h3>Phone</h3>
+            <input type="text" name="telephone" id="telephone">
+            <p id="paratele"></p>
+            <br>
+
+            <h3>Gender:</h3>
+            <input type="radio" name="Genre" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="Genre" id="male">
+            <label for="male">Male</label> <p id="paragenre"></p><br>
+
+
+            <h3 id="groupes">Groups:</h3>
+            <label for="DW101" id="radio">DW101</label>
+            <input type="radio" name="groupes" id="DW101">
+            <label for="DW102" id="radio">DW102</label>
+            <input type="radio" name="groupes" id="DW102">
+            <label for="DW103" id="radio">DW103</label>
+            <input type="radio" name="groupes" id="DW103">
+            <label for="DW104" id="radio">DW104</label>
+            <input type="radio" name="groupes" id="DW104">
+            <label for="DM101" id="radio">DM101</label>
+            <input type="radio" name="groupes" id="DM101">
+            <label for="DM102" id="radio">DM102</label>
+            <input type="radio" name="groupes" id="DM102">
+            <p id="AFFICHE"></p>
+
+            <h3 class="clb">Clubs</h3>
+            <select name="Club(s)" id="Club(s)-select" multiple>
+            <option value="Informatique">Informatique</option>
+            <option value="Robotique">Robotique</option>
+            <option value="Jeu d'échecs">Jeu d'échecs</option>
+            <option value="Musique">Musique</option>
+            <option value="Foot">Foot</option>
+            <option value="Théatre">Théatre</option>
+            </select>
+            <p id="paraclb"></p>
+            <button id="btn">GO</button>
+        </div> 
+        <script src="regix.js"></script>
+</body>
+</html>

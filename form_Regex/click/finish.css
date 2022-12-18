@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+body , html{
+    height: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg-image{
+    background-image: url(pic/Solicode\ img.jpg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(4px);
+}
+img{
+    position: absolute;
+    top: 20px;
+}
+h1{
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.31);
+    position: absolute;
+    top: 36%;
+    left: 30%;
+}
+#success{
+    position: absolute;
+    top:50% ;
+    left: 70%;
+    height: 50%;
+    width: 30%;
+}
